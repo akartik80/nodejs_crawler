@@ -18,10 +18,11 @@
   },
   "homepage": "https://github.com/akartik80/nodejs_crawler#readme",
   "devDependencies": {
-    "eslint": "4.19.1",
-    "request": "2.87.0"
+    "eslint": "4.19.1"
   },
   "dependencies": {
+    "async": "2.6.1",
+    "request": "2.87.0",
     "request-promise": "4.2.2",
     "winston": "3.0.0"
   }
