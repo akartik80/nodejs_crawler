@@ -4,7 +4,7 @@
   "description": "Recursive web crawler to harvest all routes of a website",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js > log/application.log",
+    "start": "node index.js $URL > log/application.log",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "async": "2.6.1",
+    "bluebird": "3.5.1",
     "request": "2.87.0",
     "request-promise": "4.2.2",
     "winston": "3.0.0"
