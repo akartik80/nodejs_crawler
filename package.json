@@ -1,0 +1,20 @@
+{
+  "name": "nodejs_crawler",
+  "version": "1.0.0",
+  "description": "Recursive web crawler to harvest all routes of a website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akartik80/nodejs_crawler.git"
+  },
+  "author": "akartik80",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akartik80/nodejs_crawler/issues"
+  },
+  "homepage": "https://github.com/akartik80/nodejs_crawler#readme"
+}
