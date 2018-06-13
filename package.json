@@ -4,7 +4,7 @@
   "description": "Recursive web crawler to harvest all routes of a website",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node index.js > log/application.log",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
