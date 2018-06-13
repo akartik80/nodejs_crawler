@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/akartik80/nodejs_crawler#readme",
   "devDependencies": {
-    "eslint": "4.19.1"
+    "eslint": "4.19.1",
+    "request": "2.87.0"
   }
 }
