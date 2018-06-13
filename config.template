@@ -2,10 +2,8 @@
 
 const config = {
   winston: {
-    level: 'debug',
-    handleExceptions: true,
-    humanReadableUnhandledException: true
+    level: 'debug'
   }
-}
+};
 
 module.exports = config;
