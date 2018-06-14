@@ -7,6 +7,13 @@ const config = {
 
   winston: {
     level: 'info'
+  },
+
+  redis: {
+    host: null,
+    port: null,
+    db: null,
+    password: null
   }
 };
 
