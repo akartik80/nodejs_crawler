@@ -15,6 +15,17 @@ const config = {
     port: null,
     db: null,
     password: null
+  },
+
+  knex: {
+    client: 'postgres',
+    connection: {
+      host: 'localhost',
+      port: '5432',
+      user: '',
+      password: '',
+      database: 'nodejs_crawler'
+    }
   }
 };
 
