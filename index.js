@@ -19,7 +19,7 @@ clearEnvironment.clear()
 
     crawler.crawl([argv[2]], err => {
       if (err) {
-        logger.info('Crawling complete with errors');
+        logger.info(`Crawling complete with errors.Error: ${err}`);
       } else {
         logger.info('Crawling successfully completed');
       }

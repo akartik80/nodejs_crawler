@@ -3,7 +3,12 @@
 const config = {
   application: {
     parallelRequestLimit: 5,
-    matcherRegex: /medium\.com/g
+    matcherRegex: /medium\.com/g,
+    tld: {
+      match: /\.com\/($|\?)/,
+      find: /\.com\//,
+      replace: '.com'
+    }
   },
 
   winston: {
