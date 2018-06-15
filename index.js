@@ -15,7 +15,7 @@ if (argv.length < 3) {
 
 clearEnvironment.clear()
   .then(() => {
-    logger.debug('Successfully deleted redis set');
+    logger.info('Successfully cleared environment');
 
     crawler.crawl([argv[2]], err => {
       if (err) {
@@ -26,5 +26,7 @@ clearEnvironment.clear()
     });
   })
   .catch(err => {
-    logger.error(`Error in deleting redis set: ${err}`);
+    logger.error(`Error in clearing environment: ${err}`);
   });
+
+// test for json

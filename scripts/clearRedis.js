@@ -3,7 +3,6 @@
 "use strict";
 
 const redis = require("../lib/redis");
-const logger = require("../lib/logger");
 
 const clearRedis = {
   clear: () => {
