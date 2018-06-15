@@ -6,7 +6,7 @@ const clearRedis = require("./clearRedis");
 
 const clearEnvironment = {
   clear: () => {
-    clearRedis.clear();
+    return clearRedis.clear();
   }
 };
 

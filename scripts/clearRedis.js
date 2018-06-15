@@ -7,14 +7,7 @@ const logger = require("../lib/logger");
 
 const clearRedis = {
   clear: () => {
-    redis.flushdbAsync()
-      .then(() => {
-        logger.debug('Successfully cleared redis DB');
-      })
-      .catch(err => {
-        logger.error(`Error in clearing redis DB`);
-        process.exit(0);
-      });
+    return redis.delAsync('visitedUrls'); // delete set visitedUrls for fresh crawling
   }
 };
 

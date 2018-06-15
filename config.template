@@ -2,11 +2,12 @@
 
 const config = {
   application: {
-    parallel_request_limit: 5
+    parallelRequestLimit: 5,
+    matcherRegex: /medium\.com/g
   },
 
   winston: {
-    level: 'info'
+    level: 'debug'
   },
 
   redis: {

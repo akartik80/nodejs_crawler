@@ -13,7 +13,18 @@ if (argv.length < 3) {
   process.exit(0);
 }
 
-clearEnvironment.clear();
-crawler.crawl([argv[2]]);
+clearEnvironment.clear()
+  .then(() => {
+    logger.debug('Successfully deleted redis set');
 
-// test with random and integer urls
+    crawler.crawl([argv[2]], err => {
+      if (err) {
+        logger.info('Crawling complete with errors');
+      } else {
+        logger.info('Crawling successfully completed');
+      }
+    });
+  })
+  .catch(err => {
+    logger.error(`Error in deleting redis set: ${err}`);
+  });
