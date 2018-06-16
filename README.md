@@ -21,7 +21,7 @@ redis
 2. Please note that these commands are for linux only. For other operating systems, follow
 installation guides on postgreSQL and redis websites.
 
-
+##### postgreSQL
 ```
 sudo apt-get install postgresql (skip if already installed)
 sudo service postgresql start
@@ -44,12 +44,14 @@ nodejs_crawler=# \q (exit from nodejs_crawler)
 
 ```
 
+##### Redis
+
 ```
 sudo apt install redis-server
 run redis-cli to verify redis installation
 ```
 
-###Install dependencies
+### Install dependencies
 
 From the root of the project, run:
 
@@ -59,7 +61,7 @@ npm i
 
 This will automatically install all dependencies required for this application.
 
-###Configuration
+### Configuration
 
 This application needs a config.js file in its root directory. Run following commands from
 root directory of application.
