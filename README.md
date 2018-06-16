@@ -22,7 +22,6 @@ redis
 installation guides on postgreSQL and redis websites.
 
 
-####postgreSQL
 ```
 sudo apt-get install postgresql (skip if already installed)
 sudo service postgresql start
@@ -45,14 +44,12 @@ nodejs_crawler=# \q (exit from nodejs_crawler)
 
 ```
 
-####Redis
-
 ```
 sudo apt install redis-server
 run redis-cli to verify redis installation
 ```
 
-####Install dependencies
+###Install dependencies
 
 From the root of the project, run:
 
